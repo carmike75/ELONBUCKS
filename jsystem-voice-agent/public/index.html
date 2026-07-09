@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J System Assistant | Jシステム アシスタント</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-mark">J</div>
+        <div class="brand-text">
+          <h1>J System Assistant</h1>
+          <p>Bridge Infrared Inspection Technology &middot; Giken Kaihatsu Co., Ltd. / 技建開発株式会社</p>
+        </div>
+      </div>
+      <div class="controls">
+        <label class="lang-toggle">
+          <span id="lang-label">Language</span>
+          <select id="lang-select">
+            <option value="auto">Auto / 自動</option>
+            <option value="en">English</option>
+            <option value="ja">日本語</option>
+          </select>
+        </label>
+        <label class="voice-toggle">
+          <input type="checkbox" id="voice-out-toggle" checked />
+          <span id="voice-out-label">Speak replies</span>
+        </label>
+      </div>
+    </header>
+
+    <main class="chat-window" id="chat-window" aria-live="polite"></main>
+
+    <div class="status-row" id="status-row" hidden></div>
+
+    <form class="composer" id="composer">
+      <button type="button" id="mic-button" class="mic-button" title="Voice input" aria-label="Start voice input">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+          <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+          <line x1="12" y1="19" x2="12" y2="23"/>
+          <line x1="8" y1="23" x2="16" y2="23"/>
+        </svg>
+      </button>
+      <input
+        id="text-input"
+        type="text"
+        autocomplete="off"
+        placeholder="Ask about J System... / Jシステムについてご質問ください..."
+      />
+      <button type="submit" id="send-button" class="send-button">Send</button>
+    </form>
+
+    <footer class="disclaimer">
+      <span id="scope-note">
+        This assistant only answers questions about J System bridge infrared inspection technology.
+        本アシスタントはJシステム（橋梁赤外線点検技術）に関するご質問のみお答えします。
+      </span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

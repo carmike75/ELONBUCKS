@@ -1,0 +1,154 @@
+{
+  "product": {
+    "name_en": "J System",
+    "name_ja": "Jシステム",
+    "full_name_en": "Infrared Survey Total Support System",
+    "full_name_ja": "赤外線調査トータルサポートシステム",
+    "vendor_en": "Giken Kaihatsu Co., Ltd. (Gikenkaihatsu Corporation)",
+    "vendor_ja": "技建開発株式会社",
+    "tagline_en": "Safer, lower-cost internal concrete diagnosis that detects delamination and spalling (uki/hakuri) with 100% detection performance.",
+    "tagline_ja": "浮き・剥離を100%検出する、より安全で低コストなコンクリート内部診断。"
+  },
+  "certifications": {
+    "mlit_catalog_en": "Listed in the 'Inspection Support Technology Performance Catalog' published by Japan's Ministry of Land, Infrastructure, Transport and Tourism (MLIT), April Reiwa 7 (2025). Technology number BR020004-V0625.",
+    "mlit_catalog_ja": "令和7年4月 国土交通省「点検支援技術 性能カタログ」に記載。技術番号 BR020004-V0625。",
+    "netis_en": "NETIS (New Technology Information System) registration number: SK-110019-VE.",
+    "netis_ja": "NETIS登録番号：SK-110019-VE",
+    "patents_en": "Protected by five Japanese patents: No. 4113100, No. 4081479, No. 4526570, No. 5028681, No. 5140892.",
+    "patents_ja": "特許第4113100号、特許第4081479号、特許第4526570号、特許第5028681号、特許第5140892号",
+    "award_en": "Recognized as a 'Semi-Recommended Technology' in Heisei 29 (2017) (listing period has since ended).",
+    "award_ja": "平成29年度準推奨技術（掲載期間終了技術）",
+    "equivalence_en": "J System is officially recognized as capable of diagnosis equivalent to close-range visual inspection (kinsetsu mokushi).",
+    "equivalence_ja": "Jシステムは、近接目視と同等の診断が可能と認められた技術です。"
+  },
+  "core_capability": {
+    "detection_en": "Detects concrete delamination and spalling (uki/hakuri) with 100% detection performance using non-destructive infrared thermography.",
+    "detection_ja": "浮き・剥離を100%検出する非破壊検査技術。",
+    "survey_distance_en": "Can survey structures from as close as 2 meters up to 90 meters away.",
+    "survey_distance_ja": "調査対象から2m〜90mまで調査可能。",
+    "survey_angle_en": "Photography must be taken at an angle of 30 degrees or more relative to the target surface.",
+    "survey_angle_ja": "対象面角度30°以上で撮影。",
+    "temperature_threshold_en": "A survey is viable whenever the temperature difference between a healthy area and an abnormal (defective) area is 0.2°C or greater.",
+    "temperature_threshold_ja": "異常部と健全部の温度差が0.2℃以上になれば調査可能。",
+    "damage_visualization_en": "Damage severity is displayed in a clear 3-level color code (red / yellow / blue), which prevents inconsistency between different inspectors' judgments.",
+    "damage_visualization_ja": "損傷レベルが3段階表示（赤・黄・青）でわかりやすく、判定結果のバラツキを防止。",
+    "record_keeping_en": "Survey records are saved so that long-term deterioration of the structure over time can be tracked and compared across inspection cycles.",
+    "record_keeping_ja": "調査記録を保存し、経年劣化を把握できる。",
+    "no_traffic_control_en": "Because the survey is done from a distance, no scaffolding and no traffic/lane regulation are required — unlike conventional close-range visual and hammering-sound inspections.",
+    "no_traffic_control_ja": "遠望からの調査が可能【足場・車線規制は不必要】。従来の調査（近接目視及び打音検査）は【足場・車線規制が必要】。"
+  },
+  "damage_levels": [
+    {
+      "level_en": "Caution/Urgent (Red)",
+      "level_ja": "要注意（赤）",
+      "meaning_en": "Risk of natural, spontaneous falling of concrete. Estimated defect depth: approximately 1 cm from the surface.",
+      "meaning_ja": "自然落下の可能性有。表面から深さ1cm程度の変状。"
+    },
+    {
+      "level_en": "Attention (Yellow)",
+      "level_ja": "注意（黄）",
+      "meaning_en": "Risk of falling if the area is struck/tapped (hammering-sound test would dislodge it). Estimated defect depth: approximately 2 cm from the surface.",
+      "meaning_ja": "打音すると落下の可能性有。表面から深さ2cm程度の変状。"
+    },
+    {
+      "level_en": "Observation (Blue)",
+      "level_ja": "観察（青）",
+      "meaning_en": "Only an abnormal acoustic/thermal signature is present, no imminent falling risk identified. Estimated defect depth: approximately 3 cm from the surface.",
+      "meaning_ja": "異常音のみ。表面から深さ3cm程度の変状。"
+    }
+  ],
+  "survey_process": [
+    {
+      "step_en": "Step 1 — Visible-light photography",
+      "step_ja": "①可視画像撮影",
+      "detail_en": "A visible-light image of the concrete surface is taken first to record the surface condition of the structure.",
+      "detail_ja": "コンクリートの表面状態を確認するため、可視画像を撮影します。"
+    },
+    {
+      "step_en": "Step 2 — Installation of the EM(S) device",
+      "step_ja": "②EM（S）装置の設置",
+      "detail_en": "The EM(S) device creates an artificial pseudo-cavity to check the structure's thermal environment and determine the optimal survey time window.",
+      "detail_ja": "疑似空洞を作り上げることで構造物の熱環境を確認し、最適調査時間を把握します。"
+    },
+    {
+      "step_en": "Step 3 — Infrared survey (at night)",
+      "step_ja": "③赤外線調査（夜間）",
+      "detail_en": "Once the EM(S) device confirms the optimal temperature environment, the target structure is photographed with an infrared camera. The survey is always conducted at night, when the temperature environment is stable.",
+      "detail_ja": "EM(S)装置で最適な温度環境となったことを確認したら、赤外線カメラで対象構造物を撮影していきます。調査は必ず、温度環境の安定した夜間に行います。"
+    },
+    {
+      "step_en": "Step 4 — Analysis and report creation",
+      "step_ja": "④解析・報告書作成",
+      "detail_en": "Survey data is analyzed with the proprietary 'J Software,' and the results are compiled into a bridge deployment diagram (tenkai-zu) and a formal inspection report.",
+      "detail_ja": "Ｊソフトで調査データの解析を行い、展開図と報告書に取りまとめます。"
+    }
+  ],
+  "deliverables": {
+    "deployment_diagram_en": "A bridge deployment diagram (tenkai-zu) that maps every detected damage location per span, including damage number, detection status, visible image, close-up visible image, infrared image, and support-system-processed image.",
+    "deployment_diagram_ja": "橋梁展開図（１径間当り）：損傷番号、損傷検出状況、可視画像、近接可視画像、赤外線画像、支援システム画像を記載。",
+    "report_fields_en": "The formal report records: survey date, bridge name, management office, route name, bridge type, span length/count, pier height, effective width, road-underside conditions, whether prior consultation occurred, measurement distance and angle, infrared equipment used, weather conditions, inspection date/time, project manager, and inspectors, plus a damage summary table (judgment level, number of locations, damaged area in m², total surveyed area in m²).",
+    "report_fields_ja": "調査日、橋梁名、管理事務所、路線名、橋種、径間長・径間、橋脚高、有効幅員、路下条件、協議の有無、測定距離・角度、赤外線装置、天候、点検日時、業務責任者、点検員、損傷判定・箇所数・対象面積・調査面積の集計。"
+  },
+  "adoption_history": [
+    {"year_en": "FY2014 (Heisei 26)", "year_ja": "H26年度", "event_en": "Recognized as a non-destructive inspection technology capable of detecting concrete delamination/spalling (uki/hakuri).", "event_ja": "コンクリート構造物のうき・剥離を検出可能な非破壊検査技術と認定"},
+    {"year_en": "FY2015 (Heisei 27)", "year_ja": "H27年度", "event_en": "Listed in the (draft) Inspection Support Technology Performance Catalog; recognized under next-generation social infrastructure robot technology by MLIT's Road Bureau.", "event_ja": "点検支援技術性能カタログ（案）に掲載／次世代社会インフラ用ロボット技術（国交省 道路局）"},
+    {"year_en": "FY2016 (Heisei 28)", "year_ja": "H28年度", "event_en": "Accuracy verified through testing on real, in-service bridges.", "event_ja": "実橋による精度検証"},
+    {"year_en": "FY2017 (Heisei 29)", "year_ja": "H29年度", "event_en": "Third-party damage prevention measures guidelines revised; adopted as a certified robot inspection technology.", "event_ja": "第三者被害予防措置要領改訂／ロボット認定技術 技術導入"},
+    {"year_en": "FY2019 (Heisei 31/Reiwa 1)", "year_ja": "H31年度", "event_en": "Piloted in bridge inspections at National Highway Offices across 8 regional development bureaus plus Hokkaido and Okinawa, as a NETIS technology promoted for active use.", "event_ja": "NETIS活用促進技術として、8地整＋北海道＋沖縄 国道事務所の橋梁点検で試行導入"}
+  ],
+  "cost_comparison": {
+    "example_bridge_en": "Reference bridge used for comparison: a PC (prestressed concrete) girder bridge, 150.0 m long, 8.0 m wide, 1,200 m² inspection area, targeting the underside of the bridge, with a girder/pier height of 50 m.",
+    "example_bridge_ja": "比較橋梁概要：橋梁形式PC橋、橋長150.0m、幅員8.0m、点検面積1200㎡、対象範囲：橋梁下面、桁下高50m。",
+    "methods": [
+      {
+        "method_en": "Bridge inspection vehicle",
+        "method_ja": "橋梁点検車",
+        "description_en": "A bridge inspection vehicle is set up on the bridge deck and an inspector works up close to the underside of the bridge.",
+        "description_ja": "橋面に橋梁点検車を設置し点検員が橋梁下面に近接して点検を行う。",
+        "traffic_regulation_en": "Required",
+        "traffic_regulation_ja": "有",
+        "days": 2.0,
+        "cost_per_sqm_en": "¥710/m² (includes traffic regulation costs)",
+        "cost_per_sqm_ja": "710円/㎡（交通規制費含む）",
+        "total_cost_jpy": 852000
+      },
+      {
+        "method_en": "Rope access",
+        "method_ja": "ロープアクセス",
+        "description_en": "Inspectors use rope access techniques to approach and inspect the underside of the bridge up close.",
+        "description_ja": "ロープアクセス技術にて、点検員が橋梁下面に近接して点検を行う。",
+        "traffic_regulation_en": "Not required",
+        "traffic_regulation_ja": "無",
+        "days": 3.0,
+        "cost_per_sqm_en": "¥1,100/m²",
+        "cost_per_sqm_ja": "1,100円/㎡",
+        "total_cost_jpy": 1320000
+      },
+      {
+        "method_en": "J System (infrared method)",
+        "method_ja": "Ｊシステム（赤外線法）",
+        "description_en": "A high-performance infrared camera photographs the concrete structure from beneath, remotely and without contact, to extract delamination and spalling defects.",
+        "description_ja": "桁下から高性能赤外線カメラでコンクリート構造物を撮影し、遠方非接触にて浮き,剥離を抽出する。",
+        "traffic_regulation_en": "Not required",
+        "traffic_regulation_ja": "無",
+        "days": 1.0,
+        "cost_per_sqm_en": "¥300/m²",
+        "cost_per_sqm_ja": "300円/㎡",
+        "total_cost_jpy": 360000
+      }
+    ],
+    "throughput_note_en": "Standard survey throughput is 1,200 m² per day; for areas smaller than 1,200 m², pricing is quote-based.",
+    "throughput_note_ja": "標準 1200㎡/日。1200㎡以下の場合は見積りによる。",
+    "conclusion_en": "Compared to conventional inspection methods, J System can reduce total inspection cost to as little as one-third.",
+    "conclusion_ja": "従来と比較してコストが最大1/3に！"
+  },
+  "contact": {
+    "company_en": "Giken Kaihatsu Co., Ltd.",
+    "company_ja": "技建開発株式会社",
+    "address_en": "1313-2 Kitakata, Iida City, Nagano Prefecture, Japan",
+    "address_ja": "長野県飯田市北方1313-2",
+    "tel": "0265-52-0511",
+    "website": "http://www.gkc.co.jp",
+    "email": "eigyobu@gkc.co.jp"
+  }
+}
