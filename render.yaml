@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: jsystem-voice-agent
+    runtime: node
+    rootDir: jsystem-voice-agent
+    branch: claude/jsystem-voice-agent-05mzej
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    plan: free
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ANTHROPIC_MODEL
+        value: claude-sonnet-5
