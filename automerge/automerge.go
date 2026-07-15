@@ -196,11 +196,27 @@ func (m *Automerger) storeKnownToken(t *parser.Token) {
 	m.knownNames[knownEntry{t.ChainId, strings.ToLower(t.Name)}] = true
 }
 
+type blacklistRule struct {
+	reason        string
+	namePrefix    string
+	websitePrefix string
+}
+
+// tokenBlacklist lists name/website prefixes that are rejected outright.
+// See #10163: user is spamming token-list by listing individual NFTs.
+var tokenBlacklist = []blacklistRule{
+	{reason: "NFT in fungible token repo", namePrefix: "SOLKITTY NFT"},
+	{reason: "NFT in fungible token repo", websitePrefix: "https://solkitty.io/nft"},
+}
+
 func (m *Automerger) IsBlacklistedToken(t *parser.Token) error {
-	// see #10163: user is spamming token-list by listing individual NFTs
-	// TODO: move blacklist to list
-	if strings.HasPrefix(t.Name, "SOLKITTY NFT") {
-		return fmt.Errorf("name %s blacklisted; NFT in fungible token repo", t.Name)
+	for _, b := range tokenBlacklist {
+		if b.namePrefix != "" && strings.HasPrefix(t.Name, b.namePrefix) {
+			return fmt.Errorf("name %s blacklisted; %s", t.Name, b.reason)
+		}
+		if b.websitePrefix != "" && strings.HasPrefix(t.Extensions["website"], b.websitePrefix) {
+			return fmt.Errorf("website %s blacklisted; %s", t.Extensions["website"], b.reason)
+		}
 	}
 	return nil
 }
@@ -719,11 +735,6 @@ func (m *Automerger) processTokenlist(ctx context.Context, d *diff.FileDiff, ass
 			if website, ok := t.Extensions["website"]; ok {
 				if err := tryHEADRequest(website); err != nil {
 					return nil, fmt.Errorf("failed to verify website: %s: %v", website, err)
-				}
-				// see #10163: user is spamming token-list by listing individual NFTs
-				// TODO: move blacklist to list
-				if strings.HasPrefix(t.Extensions["website"], "https://solkitty.io/nft") {
-					return nil, fmt.Errorf("blacklisted solkitty: %s:", website)
 				}
 			}
 
